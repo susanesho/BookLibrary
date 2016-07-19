@@ -1,0 +1,57 @@
+<div class="mdl-grid">
+ <div class="mdl-cell mdl-cell--4-col">
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title">
+      </div>
+      <div class="mdl-card__supporting-text">
+        <h2>Total Books:<%= @books.all.size %></h2>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/books/new">
+            <i class="material-icons">add_box</i>
+          Add New Books
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-cell--6--col">
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+      <thead>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric">Book</th>
+          <th class="mdl-data-table__cell--non-numeric">Author</th>
+          <th class="mdl-data-table__cell--non-numeric">Status</th>
+          <th class="mdl-data-table__cell--non-numeric">Date Created</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <% @books.each do |book| %>
+          <td class="mdl-data-table__cell--non-numeric"><%= book.name %></td>
+          <td><%= book.authors_name %></td>
+          <td><%= book.read %></td>
+          <td><%= book.created_at %></td>
+          <td>
+             <a href="/books/<%= book.id %>">
+             <i class="material-icons">visibility</i>
+          </a>
+        </td>
+        <td>
+          <a href="/books/<%= book.id %>/edit">
+          <i class="material-icons">mode_edit</i>
+        </a>
+      </td>
+        <td>
+        <form action="/books/<%= book.id %>" method="post">
+            <input type="hidden" name="_method" value="delete" />
+             <button>
+                <i class="material-icons">delete_forever</i>
+               </button>
+          </form>
+          </td>
+        </tr>
+      <%end%>
+    </tbody>
+    </table>
+  </div>
+</div>

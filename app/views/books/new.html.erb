@@ -1,0 +1,22 @@
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col">
+  </div>
+  <div class="mdl-cell mdl-cell--4-col">
+    <div class="paddit">
+      <%= form_tag(controller: "books", action: "create" ) do %>
+      <legend>Add a new Book</legend>
+      <div class="mui-textfield">
+        <input type="text" name="name">
+        <label>Name</label>
+      </div>
+      <div class="mui-textfield">
+        <input type="text" name="authors_name">
+        <label>Author's name</label>
+      </div>
+      <%= submit_tag "Submit", class: "mui-btn mui-btn--raised" %>
+      <% end %>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-cell--4-col">
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col">
+  </div>
+  <div class="mdl-cell mdl-cell--4-col">
+    <div class="page-content paddit">
+      <%= form_tag(controller: "books", action: "update" ) do %>
+      <legend>Edit Selected Book</legend>
+      <div class="mui-textfield">
+        <input type="text" value= "<%= @books.name %>" name="name">
+        <label>Name</label>
+      </div>
+      <div class="mui-textfield">
+        <input type= "text" value= "<%= @books.authors_name %>" name="authors_name">
+        <input type= "hidden" value= "<%= @books.read =true %>" name="read">
+        <label>Author</label>
+      </div>
+      <input type="hidden" name="_method" value="put" />
+      <%= submit_tag "Submit", class: "mui-btn mui-btn--raised" %>
+      <% end %>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-cell--4-col">
+  </div>
+</div>

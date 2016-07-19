@@ -1,0 +1,103 @@
+ @import "material";
+ @import "mui";
+ @import "material_icons";
+
+ .mdl-mega-footer {
+  padding: 16px 40px;
+  color: #fff;
+  background-color: #3f51b5;
+  opacity: 100;
+}
+
+.mdl-layout__content {
+  background: #ffffff;
+}
+
+.mdl-layout__header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    min-height: 64px;
+    max-height: 1000px;
+    z-index: 3;
+    background-color: #fff;
+    color: #3f51b5;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: max-height, box-shadow;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+    display: block;
+    color: #3f51b5;
+    font-weight: bolder;
+    line-height: 64px;
+    padding: 0 24px;
+    box-shadow: #ff0000;
+    /* border: black; */
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.mdl-grid {
+    min-height: 400px;
+}
+
+.my-button {
+    border: none;
+    border-radius: 2px;
+    color: black;
+    position: relative;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    min-width: 0px;
+    padding: 0px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}

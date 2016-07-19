@@ -1,0 +1,31 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.mui-btn {
+  background: #3f51b5;
+  color: #fff;
+  }
+
+legend {
+  color: rgb(255,64,129);
+}
+
+.paddit{
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  padding: 70px;
+}
+
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: #46B6AC;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.dis-inline{
+  display: inline;
+}
+ .mdl-button {
+    text-transform: none !important;
+}
